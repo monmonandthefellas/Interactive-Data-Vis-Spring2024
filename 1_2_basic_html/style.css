@@ -18,3 +18,15 @@ h3 {
 p {
   font-size: 1em;
 }
+
+table {
+  border:4px solid black;
+}
+
+col {
+  
+  margin: 20px;
+  background: lightseagreen;
+  width: 70%;
+  text-align: right;
+}
