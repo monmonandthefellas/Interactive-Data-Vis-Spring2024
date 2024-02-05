@@ -21,3 +21,8 @@ p {
 section {
   padding: 2em 0;
 }
+
+button {
+  padding: .05em;
+  
+}
