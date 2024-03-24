@@ -14,5 +14,16 @@ d3.csv('../data/MoMA_topTenNationalities.csv', d3.autoType)
 
     /* HTML ELEMENTS */
     /** Select your container and append the visual elements to it */
+    
+    const container = d3.select("#container")
+    console.log(container)
 
+    container
+      .selectAll(".data")
+      .data(data)
+      .join("div")
+      .attr("class", "data")
+      .text((d) => d.nationality)
   })
+
+  
