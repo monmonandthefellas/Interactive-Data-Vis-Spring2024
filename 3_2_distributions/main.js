@@ -1,15 +1,14 @@
 /* CONSTANTS AND GLOBALS */
-// const width = ,
-//   height = ,
-//   margin = ,
-//   radius = ;
+const width = window.innerWidth * 0.9,
+  height = window.innerHeight * 0.9,
+  margin = { top: 20, bottom: 60, left: 60, right: 40 };
 
 // these variables allow us to access anything we manipulate in init() but need access to in draw().
 // All these variables are empty before we assign something to them.
-// let svg;
-// let xScale;
-// let yScale;
-// let colorScale;
+let svg;
+let xScale;
+let yScale;
+let colorScale;
 
 /* APPLICATION STATE */
 let state = {
