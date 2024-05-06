@@ -55,16 +55,16 @@ function init() {
     .domain([0, d3.max(state.data, d => d.Count)])
     .range([height - margin.top - margin.bottom, margin.bottom]);
 
+
+  colorScale = d3.scaleOrdinal()
+  .domain(Object.keys(nationalityColors))
+  .range(Object.values(nationalityColors));
+
   /* Axes */
 
   const xAxis = d3.axisBottom(xScale)
   const yAxis = d3.axisLeft(yScale)
 
-  /* color scale */
-
-  colorScale = d3.scaleOrdinal()
-  .domain(Object.keys(nationalityColors))
-  .range(Object.values(nationalityColors));
 
   /* UI elements */
 
