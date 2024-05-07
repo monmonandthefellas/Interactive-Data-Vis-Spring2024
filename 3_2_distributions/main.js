@@ -5,8 +5,6 @@ const width = window.innerWidth * 0.7,
   margin = { top: 20, bottom: 60, left: 60, right: 40 },
   radius = 5;
 
-// these variables allow us to define anything we manipulate in init() but need access to in draw().
-// All these variables are empty before we assign something to them.
 let svg;
 let xScale;
 let yScale;
